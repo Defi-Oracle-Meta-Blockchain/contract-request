@@ -11,6 +11,7 @@ import { default as bob } from './bob'
 import { default as bsc } from './bsc'
 import { default as conflux } from './conflux'
 import { default as eni } from './eni'
+import { default as dfioMetaMain } from './dfio-meta-main'
 import { default as ethereum } from './ethereum'
 import { default as hashkey } from './hashkey'
 import { default as hemi } from './hemi'
@@ -50,7 +51,9 @@ import { default as zircuitMainnet } from './zircuit-mainnet'
 
 export function getConfig(chainId: number) {
     switch (chainId) {
-      case 1:
+      case 138:
+          return dfioMetaMain;
+        case 1:
           return ethereum;
         case 10:
           return optimism;
@@ -167,6 +170,7 @@ export { default as bob } from './bob'
 export { default as bsc } from './bsc'
 export { default as conflux } from './conflux'
 export { default as eni } from './eni'
+export { default as dfioMetaMain } from './dfio-meta-main'
 export { default as ethereum } from './ethereum'
 export { default as hashkey } from './hashkey'
 export { default as hemi } from './hemi'
